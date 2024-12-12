@@ -1,0 +1,95 @@
+body nav{
+  font-family: 'Reem Kufi Ink', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body h1,h2,h5{
+  font-family: 'Reem Kufi Ink', sans-serif;
+}
+body p, span{
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+.lim img{
+  width:300px;
+  height:200px;
+}
+
+.en{
+  color:#00a1ff;
+}
+.es{
+  color:#333;
+}
+.check{
+  position:relative;
+  width:50px;
+}
+.check:before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 20px;
+  background: #333;
+  border-radius: 25px;
+}
+.check:after{
+  content:'';
+  position: absolute;
+  width: 25px;
+  height: 20px;
+  background: #fff;
+  border-radius: 250px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-border-box;
+}
+.check:checked:after{
+  left:25px;
+  border: 2px solid #00a1ff;
+}
+.check:checked:before{
+  background: #00a1ff;
+}
+.click,.links{
+  z-index: 998;
+
+  border:none;
+  outline:none;
+  width:120px;;
+
+  transition: 0.3s;
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  padding:12px;
+  z-index: 999;
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+.newlist{
+  transform: scaleY(1);
+}
+.links{
+
+}
+.links:hover{
+  background-color: #A0A0A0;
+  transform: scale(1.1);
+}
+footer{
+  text-align: center; 
+}
+footer a{
+  color: red;
+}
+footer img{
+
+  justify-content: center;
+  width:30px;
+}
